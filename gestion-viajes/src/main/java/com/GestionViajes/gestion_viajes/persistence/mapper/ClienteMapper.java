@@ -16,6 +16,6 @@ public interface ClienteMapper {
     ClienteDTO toDto(Cliente cliente);
 
     @InheritInverseConfiguration
-    @Mapping(target = "reservas", ignore = true) // Ignoramos la relación con Reservas
+    //@Mapping(target = "reservas", ignore = true) // Ignoramos la relación con Reservas
     Cliente toEntity(ClienteDTO clienteDTO);
 }
